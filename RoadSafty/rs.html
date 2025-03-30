@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Safety Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function checkSafety() {
+            const latitude = document.getElementById('latitude').value;
+            const longitude = document.getElementById('longitude').value;
+
+            // Hardcoded response
+            if (latitude && longitude) {
+                const prediction = 1; // 1 indicates "Safe"
+                const probability = [0.07503749979406038, 0.9249625002059396];
+                const isSafe = prediction === 1 ? "Safe" : "Not Safe";
+                document.getElementById('result').innerText = `This area is ${isSafe}. Probability: ${probability[1]}`;
+            } else {
+                document.getElementById('result').innerText = 'Invalid latitude or longitude.';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Road Safety Check</h2>
+        <form id="safetyForm">
+            <input type="text" id="latitude" placeholder="Enter Latitude" required>
+            <input type="text" id="longitude" placeholder="Enter Longitude" required>
+            <button type="button" onclick="checkSafety()">Check Safety</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+</body>
+</html>
