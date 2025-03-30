@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Activation | Guardian Angel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/front/style/activation.css">
+    <!-- <link rel="stylesheet" href="/front/style/emergency.css"> -->
+</head>
+<body>
+    <!-- Emergency Header -->
+    <header class="emergency-header">
+        <div class="container">
+            <h1>EMERGENCY ACTIVATION PANEL</h1>
+            <div class="subtitle">Select protection option below</div>
+        </div>
+    </header>
+
+    <div class="countdown" id="countdown">
+        Emergency services will be notified in: <span id="timer">10</span> seconds
+    </div>
+
+    <!-- Emergency Options Grid -->
+    <div class="emergency-options">
+        <!-- Option 1 -->
+        <div class="emergency-option">
+            <div class="option-header">
+                <div class="option-icon">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <h3 class="option-title">Loud Noise</h3>
+            </div>
+            <p class="option-description">
+                Trigger a loud alarm sound to scare off attackers and draw attention to your location.
+                The alarm will continue sounding until manually disabled.
+            </p>
+            <button class="emergency-btn">
+                <i class="fas fa-bolt"></i> Activate Alarm
+            </button>
+        </div>
+
+        <!-- Option 2 -->
+        <div class="emergency-option">
+            <div class="option-header">
+                <div class="option-icon">
+                    <i class="fas fa-building-shield"></i>
+                </div>
+                <h3 class="option-title">Direct Message to Police</h3>
+            </div>
+            <p class="option-description">
+                Immediately send your GPS location and emergency details directly to local law enforcement
+                with pre-registered information for faster response.
+            </p>
+            <button class="emergency-btn">
+                <i class="fas fa-bolt"></i> Alert Police
+            </button>
+        </div>
+
+        <!-- Option 3 -->
+        <div class="emergency-option">
+            <div class="option-header">
+                <div class="option-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3 class="option-title">Recording Features</h3>
+            </div>
+            <p class="option-description">
+                Automatically start recording audio and video that is securely uploaded to cloud storage
+                as potential evidence for authorities.
+            </p>
+            <button class="emergency-btn">
+                <i class="fas fa-bolt"></i> Start Recording
+            </button>
+        </div>
+
+        <!-- Option 4 -->
+        <div class="emergency-option">
+            <div class="option-header">
+                <div class="option-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3 class="option-title">Fake Call Mode</h3>
+            </div>
+            <p class="option-description">
+                Simulate an incoming call from a trusted contact or authority to help you escape
+                uncomfortable or dangerous situations discreetly.
+            </p>
+            <button class="emergency-btn">
+                <i class="fas fa-bolt"></i> Initiate Fake Call
+            </button>
+        </div>
+
+        <!-- Option 5 -->
+        <div class="emergency-option">
+            <div class="option-header">
+                <div class="option-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="option-title">Community SOS Network</h3>
+            </div>
+            <p class="option-description">
+                Alert verified users in your immediate vicinity who can provide assistance
+                while waiting for official emergency services to arrive.
+            </p>
+            <button class="emergency-btn">
+                <i class="fas fa-bolt"></i> Alert Community
+            </button>
+        </div>
+
+        <!-- Option 6 -->
+        <div class="emergency-option">
+            <div class="option-header">
+                <div class="option-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <h3 class="option-title">High Risk Area Alert</h3>
+            </div>
+            <p class="option-description">
+                Receive real-time notifications when entering locations with high crime rates
+                based on police data and community reports.
+            </p>
+            <button class="emergency-btn">
+                <i class="fas fa-bolt"></i> Check Area Safety
+            </button>
+        </div>
+
+        <!-- Option 7 -->
+        <div class="emergency-option">
+            <div class="option-header">
+                <div class="option-icon">
+                    <i class="fas fa-sms"></i>
+                </div>
+                <h3 class="option-title">Offline Message</h3>
+            </div>
+            <p class="option-description">
+                Send emergency alerts via SMS when internet connectivity is unavailable,
+                ensuring help can be reached even without data connection.
+            </p>
+            <button class="emergency-btn">
+                <i class="fas fa-bolt"></i> Send SMS Alert
+            </button>
+        </div>
+
+        <!-- Option 8 -->
+        <div class="emergency-option">
+            <div class="option-header">
+                <div class="option-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="option-title">AI Distress Detection</h3>
+            </div>
+            <p class="option-description">
+                Our AI monitors for distress sounds like screams or aggressive voices and
+                can automatically trigger emergency protocols if danger is detected.
+            </p>
+            <button class="emergency-btn">
+                <i class="fas fa-bolt"></i> Enable AI Protection
+            </button>
+        </div>
+    </div>
+
+    <div class="emergency-footer">
+        <p>In case of immediate danger, please call your local emergency number</p>
+    </div>
+
+    <script src="/front/js/activation.js"></script>
+</body>
+</html>
